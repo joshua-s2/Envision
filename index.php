@@ -311,7 +311,7 @@
             </form>
         </section>
 
-
+<!--
         <section id="footer">
             <footer>
                 <div class="row">
@@ -320,7 +320,7 @@
             </footer>
         </section>
 
-
+-->
     </div>
 
     <!-- Optional JavaScript -->
