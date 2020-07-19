@@ -1,23 +1,10 @@
 <?php 
-$host = "localhost";  
-$dbase = "testmail";  
-$table = "table_name";  
- 
-$email= $_POST['email']; 
-  
-  
-// Connection to DBase  
-$dbc= mysqli_connect($host,$user,$password, $dbase)  
-or die("Unable to select database"); 
- 
- 
-$query= "INSERT INTO $table  ". "VALUES ('$email')"; 
- 
-mysqli_query ($dbc, $query) 
-or die ("Error querying database"); 
- 
-echo 'You have been successfully added.' . '<br>'; 
- 
-mysqli_close($dbc); 
- 
+$con = mysqli_connect("us-cdbr-east-02.cleardb.com","b445b8e057847e","21b1fdc2","heroku_e1558f1ceb2e989");
+if (!$con){
+    $msg ="could not  connect to the database. <br/>";
+    $msg.= "Error Number:". mysqli_connect_errno();
+    $msg.="Error:". mysqli_connect_error();
+    die($msg);
+}
+echo "Suceesfully added";
 ?>
