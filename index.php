@@ -303,12 +303,13 @@
             </div>
             <form action="sub.php" method="post">
                 <div class="form-group my-3">
-                    <input type="text" class="form-control" id="inputemail" placeholder="Enter your email address">
+                    <input type="text" class="form-control" id="inputemail" placeholder="Enter your email address" required>
                 </div>
 
                 <a type="submit" class="button button1 d-flex justify-content-center sub-2">Get early access</a>
 
             </form>
+
         </section>
 
 <!--
@@ -338,7 +339,7 @@
 
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("July 20, 2020 15:37:25").getTime();
+        var countDownDate = new Date("July 21, 2020 15:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
