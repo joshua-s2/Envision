@@ -301,17 +301,19 @@
                 <h2 class="subscribe">SIGN UP FOR EARLY ACCESS</h2>
                 <p>Condimentum nulla odio cursus gravida et aliquam. </p>
             </div>
-            <form action="sub.php" method="post">
+              <form action="sub.php" method="post">
                 <div class="form-group my-3">
-                    <input type="text" class="form-control" id="inputemail" placeholder="Enter your email address">
+                    <input type="email" class="form-control" id="inputemail" placeholder="Enter your email address" required>
                 </div>
-
-                <a type="submit" class="button button1 d-flex justify-content-center sub-2">Get early access</a>
+                <a class="button1 d-flex justify-content-center sub-2"><input class="button button1 d-flex justify-content-center sub-2" type="submit" name="submitButton" />
+                </a>
 
             </form>
+
+
         </section>
 
-
+<!--
         <section id="footer">
             <footer>
                 <div class="row">
@@ -320,7 +322,7 @@
             </footer>
         </section>
 
-
+-->
     </div>
 
     <!-- Optional JavaScript -->
@@ -338,7 +340,7 @@
 
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("July 20, 2020 15:37:25").getTime();
+        var countDownDate = new Date("July 29, 2020 15:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
